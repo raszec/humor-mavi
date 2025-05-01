@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termômetro de Humor da Mavi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Humor da Mavi 💭</h1>
+    <div class="container">
+        <div class="termometro">
+            <div class="nivel" id="nivel"></div>
+            <img src="https://i.imgur.com/f7r1CTq.jpeg" id="foto-topo" alt="Foto da Mavi">
+        </div>
+        <div class="botoes-laterais">
+            <button class="botao" onclick="mudarHumor('muito-feliz')">😄</button>
+            <button class="botao" onclick="mudarHumor('feliz')">😊</button>
+            <button class="botao" onclick="mudarHumor('normal')">🙂</button>
+            <button class="botao" onclick="mudarHumor('cansado')">😩</button>
+            <button class="botao" onclick="mudarHumor('triste')">😔</button>
+        </div>
+    </div>
+
+    <p class="mensagem" id="mensagem">Clique em um humor para começar!</p>
+
+    <h2>Última Resposta</h2>
+    <p id="ultima-resposta">Nenhuma resposta ainda.</p>
+
+    <h2>Histórico</h2>
+    <div id="historico"></div>
+
+    <footer>
+        <p>By Rasec</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
